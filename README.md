@@ -1,9 +1,6 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Flutter_barcode_scanner_plugin" />
+  <img src="https://cdn-icons-png.flaticon.com/512/5393/5393325.png"  height=100 alt="Flutter_barcode_scanner_plugin" />
 
-&#xa0;
-
-  <!-- <a href="https://flutter_barcode_scanner_plugin.netlify.app">Demo</a> -->
 </div>
 
 <h1 align="center">Flutter_barcode_scanner_plugin</h1>
@@ -11,7 +8,6 @@
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
-  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
@@ -22,49 +18,32 @@
 
 ## :dart: About
 
-Describe your project
+Plugin Flutter to use barcode scanner from Android and iOS;
 
 ## :sparkles: Features
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
-
-## :rocket: Technologies
-
-The following tools were used in this project:
-
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+:heavy_check_mark: Scan Barcode;\
+:heavy_check_mark: Scan QRCode;
 
 ## :white_check_mark: Requirements
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+`Flutter version 3.24.4`
+Gradle `8.1.0`
 
 ## :checkered_flag: Starting
 
-```bash
-# Clone this project
-$ git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/flutter_barcode_scanner_plugin
-
-# Access
-$ cd flutter_barcode_scanner_plugin
-
-# Install dependencies
-$ yarn
-
-# Run the project
-$ yarn start
-
-# The server will initialize in the <http://localhost:3000>
+```dart
+final qrCode = await FlutterBarcodeScannerPlugin.scanBarcode(
+        "#ff6666",
+        "Cancelar",
+        true,
+        ScanMode.QR,
+      );
 ```
 
 ## :memo: License
 
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+This project is under license from BSD 2-Clause License. For more details, see the [LICENSE](LICENSE.md) file.
 
 Made with :heart: by <a href="https://github.com/jhonathanqz" target="_blank">{{Jhonathan Queiroz}}</a>
 
